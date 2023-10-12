@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>T-shirt Order Page</title>
+    <script src="./t-shirt.js"></script>
+</head>
+<body>
+    <h1>T-shirt Order Form</h1>
+    <form id="orderForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="mobile">Mobile Number (9 digits):</label>
+        <input type="text" id="mobile" required><br>
+
+        <label for="message">T-shirt Message (max 50 characters):</label>
+        <input type="text" id="message" maxlength="50"><br>
+
+        <button type="button" onclick="validateAndSubmit()">Submit Order</button>
+    </form>
+
+    <div id="receipt">
+        <h2>Order Receipt</h2>
+        <p id="receiptDate"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
